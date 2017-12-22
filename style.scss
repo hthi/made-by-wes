@@ -33,8 +33,13 @@ h2 {
   justify-content: center;
   background: white;
   flex-direction: column;
-  height: 100px;
   align-items: center;
+  li {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 ul {
@@ -86,7 +91,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin: 70px 20px 50px 20px;
-  height: 60%;
+  height: 55%;
   justify-content: center;
 }
 
@@ -95,4 +100,40 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 250px;
+}
+
+@media (max-width: 650px) {
+  .links-container {
+    background: white;
+  }
+  h1 {
+    line-height: 80px;
+  }
+  .content-container {
+    align-items: left;
+    margin-bottom: 40px;
+  }
+  ul {
+    flex-direction: column;
+  }
+  .links-container {
+    li {
+      height: 50px;
+      font-size: 25px;
+      flex-direction: row;
+      a {
+        line-height: 30px;
+        &:hover {
+          color: gray;
+        }
+        &.effect-2 {
+          &:before, &:after {
+            transform: none;
+            border-width: 0;
+          }
+        }
+      }
+    }
+  }
 }
