@@ -155,15 +155,20 @@ ul {
 
 @media only screen and (max-width: 650px) {
   .contact-block {
+    margin: 130px 25px 60px 25px;
     display: block;
     margin-left: initial;
     margin-right: initial;
     .contact-block-left {
+      margin-bottom: 40px;
       margin-left: 25px;
       margin-right: 25px;
       padding: 0;
       height: inherit;
       border: none;
+    }
+    .contact-block-right {
+      height: 20%;
     }
   }
   .content-container {
