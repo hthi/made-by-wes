@@ -11,7 +11,7 @@ const Contact = () => (
         <a href="mailto:weslillig@gmail.com"><i className="fa fa-envelope-o"></i><p>weslillig@gmail.com</p></a>
       </div>
       <div className="contact-info">
-        <a href="tel:1-847-555-5555"><i className="fa fa-phone" aria-hidden="true"></i><p>(816)686-6603</p></a>
+        <a href="tel:1-816-686-6603"><i className="fa fa-phone" aria-hidden="true"></i><p>(816)686-6603</p></a>
       </div>
       <div className="contact-info">
         <a href="https://www.instagram.com/made_by_wes/" target="_blank"><i className="fa fa-instagram" aria-hidden="true"></i><p>Instagram</p></a>
