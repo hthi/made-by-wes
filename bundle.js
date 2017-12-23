@@ -2390,7 +2390,7 @@ var _reactRouterDom = __webpack_require__(15);
 
 __webpack_require__(75);
 
-var _App = __webpack_require__(81);
+var _App = __webpack_require__(82);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -23352,7 +23352,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(79)(content, options);
+var update = __webpack_require__(80)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -23377,7 +23377,7 @@ exports = module.exports = __webpack_require__(77)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  background: white;\n  background-image: url(" + __webpack_require__(78) + ");\n  background-size: cover;\n  margin: 0; }\n\na {\n  text-decoration: none; }\n\nh1, h2, p {\n  margin: 0; }\n\np {\n  font-family: 'Barlow Condensed', sans-serif;\n  color: white;\n  margin-bottom: 15px;\n  font-size: 20px; }\n\nh1 {\n  font-family: 'Mukta Mahee', sans-serif;\n  color: white;\n  font-size: 70px;\n  margin-bottom: 0;\n  text-align: center;\n  line-height: 80px; }\n\nh2 {\n  font-family: 'Mukta Mahee', sans-serif;\n  color: white; }\n\n.links-container {\n  position: absolute;\n  width: 100%;\n  bottom: 120px;\n  display: flex;\n  justify-content: space-around;\n  flex-direction: row;\n  align-items: center; }\n  .links-container li {\n    height: 100px;\n    background: rgba(204, 204, 204, 0.5);\n    display: flex;\n    flex: 1;\n    flex-direction: column;\n    justify-content: center;\n    -webkit-transition: all 0.3s ease-in;\n    -moz-transition: all 0.3s ease-in; }\n    .links-container li.active {\n      background: rgba(204, 204, 204, 0.2);\n      text-decoration: underline; }\n    .links-container li:not(.active):hover {\n      background: none; }\n      .links-container li:not(.active):hover .nav-link:hover {\n        color: black; }\n\nul {\n  padding: 0;\n  margin: 0;\n  list-style: none;\n  display: flex;\n  width: 70%;\n  justify-content: space-around;\n  width: 100%; }\n\n.nav-link {\n  font-family: 'Mukta Mahee', sans-serif;\n  text-decoration: none;\n  color: white;\n  position: relative;\n  font-size: 20px;\n  text-align: center; }\n\n.content-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 130px 25px 60px 25px;\n  justify-content: center; }\n\n.header-content {\n  margin-bottom: 40px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.contact-block {\n  flex-direction: row;\n  margin-left: 100px;\n  margin-right: 100px; }\n  .contact-block .contact-block-left {\n    padding-right: 50px;\n    flex: 1;\n    height: 40%;\n    align-items: center;\n    justify-content: center;\n    display: flex;\n    flex-direction: column;\n    border-right: 2px solid white; }\n    .contact-block .contact-block-left h2 {\n      text-align: center; }\n  .contact-block .contact-block-right {\n    flex: 1;\n    justify-content: space-around;\n    display: flex;\n    flex-direction: column;\n    height: 40%;\n    padding-left: 50px; }\n    .contact-block .contact-block-right .contact-info {\n      display: flex;\n      flex-direction: row;\n      font-size: 35px;\n      align-items: center; }\n      .contact-block .contact-block-right .contact-info a {\n        display: flex; }\n      .contact-block .contact-block-right .contact-info .fa {\n        padding-right: 20px;\n        color: black;\n        display: flex; }\n      .contact-block .contact-block-right .contact-info p {\n        margin-bottom: 0; }\n      .contact-block .contact-block-right .contact-info:hover {\n        cursor: pointer; }\n        .contact-block .contact-block-right .contact-info:hover .fa {\n          color: white; }\n\n.contact-info-block {\n  display: flex;\n  width: 50%;\n  justify-content: space-around; }\n\n@media only screen and (max-width: 650px) {\n  .contact-block {\n    margin: 130px 25px 60px 25px;\n    display: block;\n    margin-left: initial;\n    margin-right: initial; }\n    .contact-block .contact-block-left {\n      margin-bottom: 40px;\n      margin-left: 25px;\n      margin-right: 25px;\n      padding: 0;\n      height: inherit;\n      border: none; }\n    .contact-block .contact-block-right {\n      height: 20%; }\n  .content-container {\n    align-items: left;\n    margin-bottom: 20px;\n    margin-top: 50px; }\n  ul {\n    flex-direction: column; }\n  .links-container {\n    bottom: 10px; }\n    .links-container li {\n      height: 50px;\n      font-size: 25px; }\n      .links-container li .nav-link {\n        line-height: 30px;\n        width: 100%; } }\n", ""]);
+exports.push([module.i, "body {\n  background: white;\n  background-image: url(" + __webpack_require__(78) + ");\n  background-size: cover;\n  margin: 0; }\n\na {\n  text-decoration: none; }\n\nh1, h2, p {\n  margin: 0; }\n\np {\n  font-family: 'Barlow Condensed', sans-serif;\n  color: white;\n  margin-bottom: 15px;\n  font-size: 20px; }\n\nh1 {\n  font-family: 'Mukta Mahee', sans-serif;\n  color: white;\n  font-size: 70px;\n  margin-bottom: 0;\n  text-align: center;\n  line-height: 80px; }\n\nh2 {\n  font-family: 'Mukta Mahee', sans-serif;\n  color: white; }\n\n.pf-img {\n  background-image: url(" + __webpack_require__(79) + ");\n  height: 425px;\n  width: 350px;\n  background-size: contain; }\n\n.links-container {\n  position: absolute;\n  width: 100%;\n  bottom: 120px;\n  display: flex;\n  justify-content: space-around;\n  flex-direction: row;\n  align-items: center; }\n  .links-container li {\n    height: 100px;\n    background: rgba(204, 204, 204, 0.5);\n    display: flex;\n    flex: 1;\n    flex-direction: column;\n    justify-content: center;\n    -webkit-transition: all 0.3s ease-in;\n    -moz-transition: all 0.3s ease-in; }\n    .links-container li.active {\n      background: rgba(204, 204, 204, 0.2);\n      text-decoration: underline; }\n    .links-container li:not(.active):hover {\n      background: none; }\n      .links-container li:not(.active):hover .nav-link:hover {\n        color: black; }\n\nul {\n  padding: 0;\n  margin: 0;\n  list-style: none;\n  display: flex;\n  width: 70%;\n  justify-content: space-around;\n  width: 100%; }\n\n.nav-link {\n  font-family: 'Mukta Mahee', sans-serif;\n  text-decoration: none;\n  color: white;\n  position: relative;\n  font-size: 20px;\n  text-align: center; }\n\n.content-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 130px 25px 60px 25px;\n  justify-content: center; }\n\n.header-content {\n  margin-bottom: 40px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.contact-block {\n  flex-direction: row;\n  margin-left: 100px;\n  margin-right: 100px; }\n  .contact-block .contact-block-left {\n    padding-right: 50px;\n    flex: 1;\n    height: 40%;\n    align-items: center;\n    justify-content: center;\n    display: flex;\n    flex-direction: column;\n    border-right: 2px solid white; }\n    .contact-block .contact-block-left h2 {\n      text-align: center; }\n  .contact-block .contact-block-right {\n    flex: 1;\n    justify-content: space-around;\n    display: flex;\n    flex-direction: column;\n    height: 40%;\n    padding-left: 50px; }\n    .contact-block .contact-block-right .contact-info {\n      display: flex;\n      flex-direction: row;\n      font-size: 35px;\n      align-items: center; }\n      .contact-block .contact-block-right .contact-info a {\n        display: flex; }\n      .contact-block .contact-block-right .contact-info .fa {\n        padding-right: 20px;\n        color: black;\n        display: flex; }\n      .contact-block .contact-block-right .contact-info p {\n        margin-bottom: 0; }\n      .contact-block .contact-block-right .contact-info:hover {\n        cursor: pointer; }\n        .contact-block .contact-block-right .contact-info:hover .fa {\n          color: white; }\n\n.contact-info-block {\n  display: flex;\n  width: 50%;\n  justify-content: space-around; }\n\n.about-block {\n  margin-top: 100px;\n  flex-direction: row; }\n  .about-block .about-me {\n    flex: 1; }\n    .about-block .about-me p {\n      padding: 25px;\n      margin: 0;\n      line-height: 45px; }\n\n@media only screen and (max-width: 650px) {\n  .content-container {\n    align-items: left;\n    margin-bottom: 20px;\n    margin-top: 50px; }\n  .about-block {\n    flex-direction: column;\n    align-items: center; }\n    .about-block .about-me p {\n      padding: 5px;\n      line-height: 24px; }\n  .contact-block {\n    margin: 130px 25px 60px 25px;\n    display: block;\n    margin-left: initial;\n    margin-right: initial; }\n    .contact-block .contact-block-left {\n      margin-bottom: 40px;\n      margin-left: 25px;\n      margin-right: 25px;\n      padding: 0;\n      height: inherit;\n      border: none; }\n    .contact-block .contact-block-right {\n      height: 20%; }\n  ul {\n    flex-direction: column; }\n  .links-container {\n    bottom: 10px; }\n    .links-container li {\n      height: 50px;\n      font-size: 25px; }\n      .links-container li .nav-link {\n        line-height: 30px;\n        width: 100%; } }\n", ""]);
 
 // exports
 
@@ -23474,6 +23474,12 @@ module.exports = __webpack_require__.p + "cb8ed41fe740cd84c37e3a6620d5716e.jpg";
 /* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "8602e4dea5e3789a929f00a20dc14a67.jpg";
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author Tobias Koppers @sokra
@@ -23527,7 +23533,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(80);
+var	fixUrls = __webpack_require__(81);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -23843,7 +23849,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports) {
 
 
@@ -23938,7 +23944,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23952,11 +23958,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _NavigationLinks = __webpack_require__(82);
+var _NavigationLinks = __webpack_require__(83);
 
 var _NavigationLinks2 = _interopRequireDefault(_NavigationLinks);
 
-var _Main = __webpack_require__(83);
+var _Main = __webpack_require__(84);
 
 var _Main2 = _interopRequireDefault(_Main);
 
@@ -23974,7 +23980,7 @@ var App = function App() {
 exports.default = App;
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24053,7 +24059,7 @@ var NavigationLinks = function NavigationLinks() {
 exports.default = NavigationLinks;
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24069,19 +24075,19 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(15);
 
-var _about = __webpack_require__(84);
+var _about = __webpack_require__(85);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _portfolio = __webpack_require__(85);
+var _portfolio = __webpack_require__(86);
 
 var _portfolio2 = _interopRequireDefault(_portfolio);
 
-var _contact = __webpack_require__(86);
+var _contact = __webpack_require__(87);
 
 var _contact2 = _interopRequireDefault(_contact);
 
-var _home = __webpack_require__(87);
+var _home = __webpack_require__(88);
 
 var _home2 = _interopRequireDefault(_home);
 
@@ -24105,7 +24111,7 @@ var Main = function Main() {
 exports.default = Main;
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24124,11 +24130,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var About = function About() {
   return _react2.default.createElement(
     "div",
-    { className: "content-container" },
+    { className: "content-container about-block" },
+    _react2.default.createElement("div", { className: "pf-img" }),
     _react2.default.createElement(
-      "h1",
-      null,
-      "ABOUT"
+      "div",
+      { className: "about-me" },
+      _react2.default.createElement(
+        "p",
+        null,
+        "Hi, I'm Wes! I studied Cabinetry and Furniture at the North Bennet Street School in Boston. I have a pretty rad job building custom furniture pieces and teaching a fundamental woodworking class on the side."
+      )
     )
   );
 };
@@ -24136,7 +24147,7 @@ var About = function About() {
 exports.default = About;
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24167,7 +24178,7 @@ var Portfolio = function Portfolio() {
 exports.default = Portfolio;
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24253,7 +24264,7 @@ var Contact = function Contact() {
 exports.default = Contact;
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
