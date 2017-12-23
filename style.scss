@@ -12,7 +12,8 @@ h1, h2, p {
 p {
   font-family: 'Barlow Condensed', sans-serif;
   color: white;
-  margin: 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
 }
 
 h1 {
@@ -21,6 +22,7 @@ h1 {
   font-size: 70px;
   margin-bottom: 0;
   text-align: center;
+  line-height: 80px;
 }
 
 h2 {
@@ -56,6 +58,7 @@ a {
   text-decoration: none;
   color: white;
   position: relative;
+  font-size: 20px;
 
   &:before, &:after {
     content: '';
@@ -91,8 +94,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 70px 20px 50px 20px;
-  height: 55%;
+  margin: 130px 25px 60px 25px;
   justify-content: center;
 }
 
@@ -101,16 +103,13 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 250px;
 }
 
-@media (max-width: 650px) {
-  h1 {
-    line-height: 80px;
-  }
+@media only screen and (max-width: 650px) {
   .content-container {
     align-items: left;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 50px;
   }
   ul {
     flex-direction: column;
