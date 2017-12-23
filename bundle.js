@@ -24242,7 +24242,7 @@ var Contact = function Contact() {
           _react2.default.createElement(
             "p",
             null,
-            "Instagram"
+            "@made_by_wes"
           )
         )
       )
