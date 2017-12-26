@@ -241,3 +241,40 @@ ul {
     }
   }
 }
+
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(204, 204, 204, 0.5);
+  min-height: 55px;
+  ul {
+    padding-bottom: 35px;
+    li {
+      padding-left: 20px;
+    }
+  }
+
+  .fa-bars {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-device-width: 650px) {
+  .links-container {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+.hide {
+  display: none;
+}
