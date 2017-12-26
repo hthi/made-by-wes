@@ -261,13 +261,20 @@ ul {
 
   .fa-bars {
     position: absolute;
-    right: 0;
     padding: 20px;
     bottom: 0;
   }
 }
 
 @media only screen and (max-device-width: 650px) {
+  .contact-block {
+    h1 {
+      font-size: 53px;
+    }
+    .contact-block-right {
+      height: 33%;
+    }
+  }
   .links-container {
     display: none;
   }
