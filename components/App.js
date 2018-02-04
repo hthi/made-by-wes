@@ -3,7 +3,7 @@ import NavigationLinks from './NavigationLinks';
 import Main from './Main';
 
 const App = () => (
-  <div>
+  <div className="app-container">
     <Main />
     <NavigationLinks />
   </div>

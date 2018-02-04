@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Home = () => (
-  <div className="content-container">
+  <div className="content-container home-block">
     <div className="header-content">
       <h1>YOUR FURNITURE, YOUR WAY</h1>
       <h2>Made By Wes</h2>

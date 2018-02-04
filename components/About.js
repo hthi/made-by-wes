@@ -6,7 +6,7 @@ const About = () => (
     <div className="about-me">
       <p>
         Hi, I'm Wes! I studied Cabinetry and Furniture at the North Bennet Street School in Boston.
-        I have a pretty rad job building custom furniture pieces and teaching a fundamental woodworking class on the side.
+        I build custom furniture and am available to teach woodworking classes as well.
       </p>
     </div>
   </div>

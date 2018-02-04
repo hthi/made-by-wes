@@ -1,6 +1,10 @@
+#root, .app-container {
+  height: 100%;
+}
+
 body {
   background: white;
-  background-image: url("wood_background2.jpg");
+  background-image: url("assets/wood_background2.jpg");
   background-size: cover;
   margin: 0;
 }
@@ -14,61 +18,24 @@ h1, h2, p {
 }
 
 p {
-  font-family: 'Barlow Condensed', sans-serif;
   color: white;
-  margin-bottom: 15px;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 20px;
+  margin-bottom: 15px;
 }
 
 h1 {
-  font-family: 'Mukta Mahee', sans-serif;
   color: white;
   font-size: 70px;
+  font-family: 'Mukta Mahee', sans-serif;
+  line-height: 80px;
   margin-bottom: 0;
   text-align: center;
-  line-height: 80px;
 }
 
 h2 {
-  font-family: 'Mukta Mahee', sans-serif;
   color: white;
-}
-
-.pf-img {
-  background-image: url("wes_pf_splash2.jpg");
-  height: 425px;
-  width: 350px;
-  background-size: contain;
-}
-
-.links-container {
-  position: absolute;
-  width: 100%;
-  bottom: 120px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
-  li {
-    height: 100px;
-    background: rgba(204, 204, 204, 0.5);
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    &.active {
-      background: rgba(204, 204, 204, 0.2);
-      text-decoration: underline;
-    }
-    &:not(.active):hover {
-      background: none;
-      .nav-link:hover {
-        color: black;
-      }
-    }
-  }
+  font-family: 'Mukta Mahee', sans-serif;
 }
 
 ul {
@@ -76,20 +43,83 @@ ul {
   margin: 0;
   list-style: none;
   display: flex;
-  width: 70%;
   justify-content: space-around;
   width: 100%;
 }
 
-.nav-link {
-  font-family: 'Mukta Mahee', sans-serif;
-  text-decoration: none;
-  color: white;
-  position: relative;
-  font-size: 20px;
-  text-align: center;
+.app-container {
+  display: flex;
+  flex-direction: column;
 }
 
+.main-nav {
+  flex: 1 1 0;
+  display: flex;
+  .links-container {
+    // align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    li {
+      background: rgba(204, 204, 204, 0.5);
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      height: 100px;
+      justify-content: center;
+      -webkit-transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      &.active {
+        background: rgba(204, 204, 204, 0.2);
+        text-decoration: underline;
+      }
+      &:not(.active):hover {
+        background: none;
+        .nav-link:hover {
+          color: black;
+        }
+      }
+
+      .nav-link {
+        font-family: 'Mukta Mahee', sans-serif;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  .hamburger-menu {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    // right: 0;
+    // left: 0;
+    width: 100%;
+    background: rgba(150, 149, 149, 0.95);
+    min-height: 55px;
+    ul {
+      padding-top: 20px;
+      padding-bottom: 35px;
+      li {
+        padding-left: 20px;
+        height: 40px;
+      }
+    }
+
+    .fa-bars {
+      position: absolute;
+      padding: 20px;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+// All Pages
 .content-container {
   display: flex;
   flex-direction: column;
@@ -98,13 +128,17 @@ ul {
   justify-content: center;
 }
 
-.header-content {
-  margin-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+// Home Page
+.home-block {
+  .header-content {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
+// Contact Page
 .contact-block {
   flex-direction: row;
   margin-left: 100px;
@@ -130,10 +164,10 @@ ul {
     height: 40%;
     padding-left: 50px;
     .contact-info {
+      align-items: center;
       display: flex;
       flex-direction: row;
       font-size: 35px;
-      align-items: center;
       a {
         display: flex;
       }
@@ -154,15 +188,17 @@ ul {
     }
   }
 }
-.contact-info-block {
-  display: flex;
-  width: 50%;
-  justify-content: space-around;
-}
 
+// About Page
 .about-block {
   margin-top: 100px;
   flex-direction: row;
+  .pf-img {
+    background-image: url("assets/wes_pf_splash2.jpg");
+    background-size: contain;
+    height: 323px;
+    width: 266px;
+  }
   .about-me {
     flex:1;
     p {
@@ -173,7 +209,33 @@ ul {
   }
 }
 
+// Project Page
+.project {
+  h1 {
+    margin-bottom: 30px;
+  }
+}
+
+
+// Smaller screens
 @media only screen and (max-width: 650px) {
+
+  ul {
+    flex-direction: column;
+    .links-container {
+      bottom: 10px;
+      li {
+        height: 50px;
+        font-size: 25px;
+        .nav-link {
+          line-height: 30px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // All Pages
   .content-container {
     align-items: left;
     margin-bottom: 20px;
@@ -186,6 +248,8 @@ ul {
       margin-bottom: 30px;
     }
   }
+
+  // About Page
   .about-block {
     margin-left: 0px;
     margin-right: 0px;
@@ -203,6 +267,8 @@ ul {
       }
     }
   }
+
+  // Contact Page
   .contact-block {
     margin: 20px 25px 60px 25px;
     display: block;
@@ -226,47 +292,26 @@ ul {
       }
     }
   }
-  ul {
-    flex-direction: column;
-  }
-  .links-container {
-    bottom: 10px;
-    li {
-      height: 50px;
-      font-size: 25px;
-      .nav-link {
-        line-height: 30px;
-        width: 100%;
+}
+
+// Mobile Screens
+@media only screen and (max-device-width: 650px) {
+  // All Pages
+  .content-container {
+    p {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+    .projects-container {
+      flex-direction: column;
+      .project-img {
+        height: 200px;
+        margin: 10px;
       }
     }
   }
-}
 
-.hamburger-menu {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(150, 149, 149, 0.95);
-  min-height: 55px;
-  ul {
-    padding-top: 20px;
-    padding-bottom: 35px;
-    li {
-      padding-left: 20px;
-    }
-  }
-
-  .fa-bars {
-    position: absolute;
-    padding: 20px;
-    bottom: 0;
-  }
-}
-
-@media only screen and (max-device-width: 650px) {
+  // Contact Page
   .contact-block {
     h1 {
       font-size: 53px;
@@ -275,20 +320,48 @@ ul {
       height: 33%;
     }
   }
+
+  // Main Nav
   .links-container {
-    display: none;
+    display: none !important;
   }
   .hamburger-menu {
-    display: block;
-  }
-  .content-container {
-    p {
-      margin-bottom: 10px;
-      font-size: 17px;
+    display: block !important;
+    a {
+      font-family: 'Mukta Mahee', sans-serif;
+      color: black;
     }
   }
 }
 
+// Portfolio Page
+.projects-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  .project-img {
+    height: 300px;
+    padding: 10px;
+  }
+}
+
+
+// Helper classes
 .hide {
   display: none;
+}
+
+
+// Slider
+.slick-slider {
+  height: 300px;
+  width: 100%;
+  .slider-img {
+    height: 286px;
+  }
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
 }

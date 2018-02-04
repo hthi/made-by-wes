@@ -37,7 +37,7 @@ export default class NavigationLinks extends React.Component {
     }
 
     return (
-      <div>
+      <div className="main-nav">
         <div className="links-container">
           <ul>
             <li className="active" key='home'><Link to='/' className="nav-link">HOME</Link></li>
