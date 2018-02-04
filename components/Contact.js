@@ -4,7 +4,7 @@ const Contact = () => (
   <div className="content-container contact-block">
     <div className="contact-block-left">
       <h1>Available for Commissions!</h1>
-      <h2>Please contact with inquiries.</h2>
+      <p>Please contact with inquiries.</p>
     </div>
     <div className="contact-block-right">
       <div className="contact-info">
@@ -15,6 +15,9 @@ const Contact = () => (
       </div>
       <div className="contact-info">
         <a href="https://www.instagram.com/made_by_wes/" target="_blank"><i className="fa fa-instagram" aria-hidden="true"></i><p>@made_by_wes</p></a>
+      </div>
+      <div className="contact-info">
+        <a href="https://www.facebook.com/MadeByWesFurniture/" target="_blank"><i className="fa fa-facebook-square" aria-hidden="true"></i><p>MadeByWesFurniture</p></a>
       </div>
     </div>
   </div>

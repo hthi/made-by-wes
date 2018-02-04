@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+main {
+  height: 75%;
+}
+
 a {
   text-decoration: none;
 }
@@ -26,7 +30,7 @@ p {
 
 h1 {
   color: white;
-  font-size: 70px;
+  font-size: 60px;
   font-family: 'Mukta Mahee', sans-serif;
   line-height: 80px;
   margin-bottom: 0;
@@ -124,7 +128,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 130px 25px 60px 25px;
+  margin: 80px 25px 60px 25px;
   justify-content: center;
 }
 
@@ -191,13 +195,12 @@ ul {
 
 // About Page
 .about-block {
-  margin-top: 100px;
   flex-direction: row;
   .pf-img {
     background-image: url("assets/wes_pf_splash2.jpg");
     background-size: contain;
-    height: 323px;
-    width: 266px;
+    height: 391px;
+    width: 322px;
   }
   .about-me {
     flex:1;
@@ -219,7 +222,6 @@ ul {
 
 // Smaller screens
 @media only screen and (max-width: 650px) {
-
   ul {
     flex-direction: column;
     .links-container {
@@ -239,13 +241,37 @@ ul {
   .content-container {
     align-items: left;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
     .header-content {
       h1 {
         font-size: 60px;
         line-height: 70px;
       }
       margin-bottom: 30px;
+    }
+
+    // Contact Page
+    &.contact-block {
+      display: block;
+      margin-left: initial;
+      margin-right: initial;
+      .contact-block-left {
+        margin-bottom: 40px;
+        padding: 0;
+        height: inherit;
+        border: none;
+      }
+      .contact-block-right {
+        height: 35%;
+        .contact-info {
+          p {
+            font-size: 20px;
+          }
+          a {
+            align-items: center;
+          }
+        }
+      }
     }
   }
 
@@ -261,34 +287,9 @@ ul {
     }
     .about-me {
       p {
-        padding: 25px;
+        padding: 25px 25px 0 25px;
         line-height: 20px;
         font-size: 20px;
-      }
-    }
-  }
-
-  // Contact Page
-  .contact-block {
-    margin: 20px 25px 60px 25px;
-    display: block;
-    margin-left: initial;
-    margin-right: initial;
-    .contact-block-left {
-      margin-bottom: 40px;
-      padding: 0;
-      height: inherit;
-      border: none;
-    }
-    .contact-block-right {
-      height: 20%;
-      .contact-info {
-        p {
-          font-size: 20px;
-        }
-        a {
-          align-items: center;
-        }
       }
     }
   }
@@ -354,10 +355,10 @@ ul {
 
 // Slider
 .slick-slider {
-  height: 300px;
+  height: 350px;
   width: 100%;
   .slider-img {
-    height: 286px;
+    height: 350px;
   }
 }
 
