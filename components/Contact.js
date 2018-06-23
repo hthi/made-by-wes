@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Contact = () => (
-  <div className="content-container contact-block">
+  <div id="contact" className="content-container contact-block">
     <div className="contact-block-left">
       <h1>Available for Commissions!</h1>
       <p>Please contact with inquiries.</p>

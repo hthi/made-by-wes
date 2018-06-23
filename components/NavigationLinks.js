@@ -40,19 +40,19 @@ export default class NavigationLinks extends React.Component {
       <div className="main-nav">
         <div className="links-container">
           <ul>
-            <li className="active" key='home'><Link to='/' className="nav-link">HOME</Link></li>
-            <li key='about'><Link to='/about' className="nav-link">ABOUT</Link></li>
-            <li key='portfolio'><Link to='/portfolio' className="nav-link">PORTFOLIO</Link></li>
-            <li key='contact'><Link to='/contact' className="nav-link">CONTACT</Link></li>
+            <li className="active" key='home'><a href="#home" className="nav-link">HOME</a></li>
+            <li key='about'><a href="#about" className="nav-link">ABOUT</a></li>
+            <li key='projects'><a href="#projects" className="nav-link">PORTFOLIO</a></li>
+            <li key='contact'><a href="#contact" className="nav-link">CONTACT</a></li>
           </ul>
         </div>
         <div className="hamburger-menu" onClick={() => this.toggleMenu()}>
           <i className="fa fa-bars" aria-hidden="true"/>
           <ul className={hamburgerClass}>
-            <li className="active" key='home'><Link to='/' className="nav-link">HOME</Link></li>
-            <li key='about'><Link to='/about' className="nav-link">ABOUT</Link></li>
-            <li key='portfolio'><Link to='/portfolio' className="nav-link">PORTFOLIO</Link></li>
-            <li key='contact'><Link to='/contact' className="nav-link">CONTACT</Link></li>
+            <li className="active" key='#home'><a href="#home" className="nav-link">HOME</a></li>
+            <li key='about'><a href="#about" className="nav-link">ABOUT</a></li>
+            <li key='projects'><a href="#projects" className="nav-link">PORTFOLIO</a></li>
+            <li key='contact'><a href="#contact" className="nav-link">CONTACT</a></li>
           </ul>
         </div>
       </div>

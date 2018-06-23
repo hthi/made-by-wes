@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  height: 75%;
+  flex: 3;
 }
 
 a {
@@ -57,25 +57,25 @@ ul {
 }
 
 .main-nav {
-  flex: 1 1 0;
-  display: flex;
+  position: fixed;
+  top: 0px;
+  width: 100%;
   .links-container {
-    // align-items: center;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     li {
-      background: rgba(204, 204, 204, 0.5);
+      background: rgba(204, 204, 204, 0.8);
       display: flex;
       flex: 1;
       flex-direction: column;
-      height: 100px;
+      height: 50px;
       justify-content: center;
       -webkit-transition: all 0.3s ease-in;
       -moz-transition: all 0.3s ease-in;
       &.active {
-        background: rgba(204, 204, 204, 0.2);
+        background: rgba(204, 204, 204, 0.5);
         text-decoration: underline;
       }
       &:not(.active):hover {
@@ -88,7 +88,7 @@ ul {
       .nav-link {
         font-family: 'Mukta Mahee', sans-serif;
         text-decoration: none;
-        color: white;
+        color: #100f0f;
         position: relative;
         font-size: 20px;
         text-align: center;
@@ -98,16 +98,13 @@ ul {
 
   .hamburger-menu {
     display: none;
-    position: absolute;
-    bottom: 0;
-    // right: 0;
-    // left: 0;
+    position: fixed;
+    top: 0;
     width: 100%;
     background: rgba(150, 149, 149, 0.95);
     min-height: 55px;
     ul {
-      padding-top: 20px;
-      padding-bottom: 35px;
+      padding-top: 35px;
       li {
         padding-left: 20px;
         height: 40px;
@@ -115,9 +112,9 @@ ul {
     }
 
     .fa-bars {
-      position: absolute;
+      position: fixed;
       padding: 20px;
-      bottom: 0;
+      top: 0;
       right: 0;
     }
   }
@@ -125,20 +122,19 @@ ul {
 
 // All Pages
 .content-container {
+  height: 100vh;
   overflow: hidden;
   overflow-y: scroll;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 80px 25px 60px 25px;
   justify-content: center;
 }
 
 // Home Page
 .home-block {
   .header-content {
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,6 +157,10 @@ ul {
     border-right: 2px solid white;
     h2 {
       text-align: center;
+    }
+    p {
+      font-weight: 300;
+      font-family: 'Muli', sans-serif;
     }
   }
   .contact-block-right {
@@ -201,16 +201,22 @@ ul {
   flex-direction: row;
   .pf-img {
     background-image: url("assets/wes_pf_splash2.jpg");
-    background-size: contain;
-    height: 391px;
-    width: 322px;
+    background-size: cover;
+    height: 350px;
+    width: 330px;
+    border-radius: 235px;
+    margin: 40px 20px;
   }
   .about-me {
     flex:1;
+    padding: 20px;
     p {
-      padding: 25px;
+      font-weight: 300;
+      font-family: 'Muli', sans-serif;
+      font-size: 15px;
+      padding: 10px;
       margin: 0;
-      line-height: 45px;
+      line-height: 20px;
     }
   }
 }
@@ -219,6 +225,14 @@ ul {
 .project {
   h1 {
     margin-bottom: 30px;
+  }
+  p {
+    font-weight: 300;
+    font-family: 'Muli', sans-serif;
+    font-size: 15px;
+    a {
+      color: white;
+    }
   }
 }
 
@@ -242,9 +256,10 @@ ul {
 
   // All Pages
   .content-container {
+    padding-top: 85px;
+    padding-bottom: 100px;
+    height: unset;
     align-items: left;
-    margin-bottom: 20px;
-    margin-top: 50px;
     .header-content {
       h1 {
         font-size: 60px;
@@ -275,6 +290,20 @@ ul {
           }
         }
       }
+      .contact-block-left {
+        p {
+          font-weight: 300;
+          font-family: 'Muli', sans-serif;
+        }
+      }
+    }
+  }
+
+  .project {
+    padding: 20px;
+    h2 {
+      line-height: 30px;
+      padding-bottom: 15px;
     }
   }
 
@@ -285,14 +314,17 @@ ul {
     flex-direction: column;
     align-items: center;
     .pf-img {
-      height: 323px;
-      width: 266px;
+      height: 315px;
+      width: 290px;
+      margin: 0;
     }
     .about-me {
+      padding: 30px 20px 20px 20px;
       p {
-        padding: 25px 25px 0 25px;
+        padding: 0;
+        font-size: 15px;
         line-height: 20px;
-        font-size: 20px;
+        padding-bottom: 20px;
       }
     }
   }
@@ -302,6 +334,9 @@ ul {
 @media only screen and (max-device-width: 650px) {
   // All Pages
   .content-container {
+    height: unset;
+    padding-top: 85px;
+    padding-bottom: 100px;
     p {
       margin-bottom: 10px;
       font-size: 17px;
@@ -315,6 +350,15 @@ ul {
     }
   }
 
+  // Home
+  .home-block {
+    padding-left: 20px;
+    padding-right: 20px;
+    .header-content {
+      margin-bottom: 70px;
+    }
+  }
+
   // Contact Page
   .contact-block {
     h1 {
@@ -322,6 +366,29 @@ ul {
     }
     .contact-block-right {
       height: 33%;
+    }
+  }
+
+  .project {
+    padding-left: 20px;
+    padding-right: 20px;
+    p {
+      font-size: 15px;
+    }
+  }
+
+  // About Page
+  .about-block {
+    .pf-img {
+      height: 315px;
+      width: 290px;
+      margin: 0;
+    }
+    p {
+      padding: 0;
+      font-size: 15px;
+      line-height: 20px;
+      padding-bottom: 20px;
     }
   }
 
@@ -360,6 +427,10 @@ ul {
   display: none;
 }
 
+iframe {
+  border: none;
+  height: 350px;
+}
 
 // Slider
 .slick-slider {
