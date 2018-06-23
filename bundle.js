@@ -24832,10 +24832,12 @@ var NavigationLinks = function (_React$Component) {
             { className: hamburgerClass },
             _react2.default.createElement(
               'li',
-              { className: 'active', key: '#home' },
+              { className: 'active', key: 'home' },
               _react2.default.createElement(
                 'a',
-                { href: '#home', className: 'nav-link' },
+                { onClick: function onClick() {
+                    document.getElementById('home').scrollIntoView(true);
+                  }, className: 'nav-link' },
                 'HOME'
               )
             ),
@@ -24844,7 +24846,9 @@ var NavigationLinks = function (_React$Component) {
               { key: 'about' },
               _react2.default.createElement(
                 'a',
-                { href: '#about', className: 'nav-link' },
+                { onClick: function onClick() {
+                    document.getElementById('about').scrollIntoView(true);
+                  }, className: 'nav-link' },
                 'ABOUT'
               )
             ),
@@ -24853,7 +24857,9 @@ var NavigationLinks = function (_React$Component) {
               { key: 'projects' },
               _react2.default.createElement(
                 'a',
-                { href: '#projects', className: 'nav-link' },
+                { onClick: function onClick() {
+                    document.getElementById('projects').scrollIntoView(true);
+                  }, className: 'nav-link' },
                 'PORTFOLIO'
               )
             ),
@@ -24862,7 +24868,9 @@ var NavigationLinks = function (_React$Component) {
               { key: 'contact' },
               _react2.default.createElement(
                 'a',
-                { href: '#contact', className: 'nav-link' },
+                { onClick: function onClick() {
+                    document.getElementById('contact').scrollIntoView(true);
+                  }, className: 'nav-link' },
                 'CONTACT'
               )
             )
