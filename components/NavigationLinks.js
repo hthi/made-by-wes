@@ -40,10 +40,10 @@ export default class NavigationLinks extends React.Component {
       <div className="main-nav">
         <div className="links-container">
           <ul>
-            <li className="active" key='home'><a href="#home" className="nav-link">HOME</a></li>
-            <li key='about'><a href="#about" className="nav-link">ABOUT</a></li>
-            <li key='projects'><a href="#projects" className="nav-link">PORTFOLIO</a></li>
-            <li key='contact'><a href="#contact" className="nav-link">CONTACT</a></li>
+            <li className="active" key='home'><a onClick={() => {document.getElementById('home').scrollIntoView(true)}} className="nav-link">HOME</a></li>
+            <li key='about'><a onClick={() => {document.getElementById('about').scrollIntoView(true)}} className="nav-link">ABOUT</a></li>
+            <li key='projects'><a onClick={() => {document.getElementById('projects').scrollIntoView(true)}} className="nav-link">PORTFOLIO</a></li>
+            <li key='contact'><a onClick={() => {document.getElementById('contact').scrollIntoView(true)}} className="nav-link">CONTACT</a></li>
           </ul>
         </div>
         <div className="hamburger-menu" onClick={() => this.toggleMenu()}>
