@@ -3151,11 +3151,18 @@ var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+window.sr = ScrollReveal();
+
 (0, _reactDom.render)(_react2.default.createElement(
   _reactRouterDom.BrowserRouter,
   null,
   _react2.default.createElement(_App2.default, null)
 ), document.getElementById('root'));
+
+sr.reveal('#home');
+sr.reveal('#about');
+sr.reveal('#projects');
+sr.reveal('#contact');
 
 /***/ }),
 /* 42 */
