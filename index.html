@@ -12,6 +12,16 @@
     <div id="root">
     </div>
   </body>
+  <script type="text/javascript" src="node_modules/instafeed.js/instafeed.min.js"></script>
+  <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: 1990150334,
+        clientId: '4db74db048bf449fae0841e03b12390a',
+        accessToken: '1990150334.1677ed0.2c357f8c6324411398d16c1e17bf0662'
+    });
+    feed.run();
+  </script>
   <script src="https://use.fontawesome.com/6ecdc8f78f.js"></script>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="bundle.js"></script>

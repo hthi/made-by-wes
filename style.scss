@@ -11,6 +11,7 @@ body {
 
 main {
   flex: 3;
+  padding: 0 50px;
 }
 
 a {
@@ -30,7 +31,7 @@ p {
 
 h1 {
   color: white;
-  font-size: 60px;
+  font-size: 50px;
   font-family: 'Mukta Mahee', sans-serif;
   line-height: 80px;
   margin-bottom: 0;
@@ -74,12 +75,13 @@ ul {
       justify-content: center;
       -webkit-transition: all 0.3s ease-in;
       -moz-transition: all 0.3s ease-in;
+      cursor: pointer;
       &.active {
         background: rgba(204, 204, 204, 0.5);
         text-decoration: underline;
       }
       &:not(.active):hover {
-        background: none;
+        background: rgba(204, 204, 204, 0.9);
         .nav-link:hover {
           color: black;
         }
@@ -144,8 +146,6 @@ ul {
 // Contact Page
 .contact-block {
   flex-direction: row;
-  margin-left: 100px;
-  margin-right: 100px;
   .contact-block-left {
     padding-right: 50px;
     flex:1;
@@ -236,9 +236,18 @@ ul {
   }
 }
 
+.instafeed-content {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
 
 // Smaller screens
 @media only screen and (max-width: 650px) {
+  main {
+    padding-top: 150px;
+  }
+
   ul {
     flex-direction: column;
     .links-container {
@@ -262,7 +271,7 @@ ul {
     align-items: left;
     .header-content {
       h1 {
-        font-size: 60px;
+        font-size: 50px;
         line-height: 70px;
       }
       margin-bottom: 30px;
