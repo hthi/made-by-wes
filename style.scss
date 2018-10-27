@@ -240,6 +240,9 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   display: flex;
+  img {
+    margin: 10px;
+  }
 }
 
 // Smaller screens
@@ -341,6 +344,10 @@ ul {
 
 // Mobile Screens
 @media only screen and (max-device-width: 650px) {
+  main {
+    padding-top: 0px;
+  }
+
   // All Pages
   .content-container {
     height: unset;
